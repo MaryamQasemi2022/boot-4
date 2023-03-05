@@ -1,0 +1,19 @@
+{
+  "name": "boot-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss:assets/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.3.0-alpha1",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.58.0"
+  }
+}

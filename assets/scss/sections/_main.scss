@@ -1,0 +1,12 @@
+.main {
+  background-color: #f2f7ff;
+  @include transition;
+
+  @media (min-width: 992px) {
+    margin-right: 250px;
+  }
+
+  &.active {
+    margin-right: 0;
+  }
+}

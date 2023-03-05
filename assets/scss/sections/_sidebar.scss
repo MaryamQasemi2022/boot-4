@@ -1,0 +1,103 @@
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  overflow-y: hidden;
+  z-index: 999;
+  margin-right: -250px;
+  padding: 2rem;
+  background-color: white;
+  @include transition;
+
+  &:hover {
+    overflow-y: auto;
+  }
+  @media (min-width: 992px) {
+    margin-right: 0;
+  }
+  &.hide {
+    margin-right: -250px;
+  }
+  &.show {
+    margin-right: 0;
+  }
+
+  .close-sidebar-btn {
+    @include transition;
+    cursor: pointer;
+  }
+  .close-sidebar-btn:hover {
+    color: red;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-right: 0;
+
+    a {
+      text-decoration: none;
+    }
+
+    li.sidebar-item {
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      .sidebar-link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: $dark-blue;
+        padding: 0.5rem;
+        border-radius: 5px;
+        @include transition;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        &:hover {
+          background-color: $light-blue;
+        }
+      }
+
+      &.active {
+        .sidebar-link {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+li.sidebar-item ul.submenu {
+  display: none;
+  margin-right: 1rem;
+  li.submenu-item {
+    a {
+      display: block;
+      color: $dark-blue;
+      padding: 0.5rem;
+      border-radius: 5px;
+      @include transition;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:hover {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+li.sidebar-item.show ul.submenu {
+  display: block;
+}
+.dropdown-toggle-btn::before {
+  @include transition;
+}
+li.sidebar-item.show .dropdown-toggle-btn::before {
+  content: "\F286";
+}

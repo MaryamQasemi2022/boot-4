@@ -1,0 +1,86 @@
+i.bi {
+  line-height: 0;
+}
+.fs-7 {
+  font-size: 0.9rem;
+}
+.text-gray {
+  color: #44494e;
+}
+.text-gray-600 {
+  color: #6c757d;
+}
+.bg-red {
+  background-color: #ff7976;
+}
+.bg-purple {
+  background-color: #9694ff;
+}
+.bg-blue {
+  background-color: #57caeb;
+}
+.bg-green {
+  background-color: #5ddab4;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.card-header {
+  border-bottom: none;
+  background-color: #fff;
+  padding: 1rem;
+}
+.card-header:first-child {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.btn-blue {
+  color: white;
+  background-color: $blue;
+}
+.btn-blue:hover {
+  border: 1px solid $blue;
+  color: $blue;
+}
+.dir-ltr {
+  direction: ltr !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $blue;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-blue;
+}

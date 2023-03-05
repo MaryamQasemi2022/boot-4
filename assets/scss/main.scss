@@ -1,0 +1,14 @@
+$blue: #00a7bd;
+$dark-blue: #25396f;
+$light-blue: #f0f1f5;
+
+@import "./fonts";
+@import "./mixins.scss";
+@import "./utilites";
+// mixins
+
+// section
+@import "./sections/sidebar";
+@import "./sections/main";
+@import "./sections/header";
+@import "./sections/stats";
